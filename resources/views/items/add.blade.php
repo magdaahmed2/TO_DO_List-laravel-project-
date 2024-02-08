@@ -30,13 +30,13 @@
           @enderror
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">description</label>
-        <input type="text" class="form-control" id="exampleInputPassword1"
-         name="description" value="{{old('description')}}">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="description">{{ old('description') }}</textarea>
         @error("description")
-          <div class="text-danger"> {{$message}} </div>
+            <div class="text-danger"> {{ $message }} </div>
         @enderror
-      </div>
+    </div>
+
      <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Due Date</label>
         <input type="date" class="form-control" id="exampleInputPassword1"
